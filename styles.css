@@ -45,7 +45,7 @@ span {
   grid-template-columns: 50% 50%;
   width: 75vw;
   height: 60vh;
-  background: hsl(244, 38%, 16%);
+  background-color: hsl(244, 38%, 16%);
   border-radius: 1%;
   overflow: hidden;
 }
@@ -89,7 +89,8 @@ span {
   align-content: space-between;
 }
 .img {
-  background: url("./images/image-header-desktop.jpg");
+  background: rgb(205, 133, 247) url("./images/image-header-desktop.jpg");
+  background-blend-mode: multiply;
   background-size: cover;
 }
 
