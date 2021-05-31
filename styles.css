@@ -1,0 +1,143 @@
+/* .attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
+}*/
+
+/* TODO */
+
+:root {
+  --primary-font: Inter;
+  --secondary-font: Lexend Deca;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.fillx {
+  width: 100%;
+}
+.filly {
+  height: 100%;
+}
+body {
+  height: 100vh;
+  display: grid;
+  font-family: var(--primary-font);
+  font-size: 15px;
+  background: hsl(233, 47%, 7%);
+  justify-content: center;
+  align-content: center;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 75vw;
+  height: 60vh;
+  background: hsl(244, 38%, 16%);
+  border-radius: 1%;
+  overflow: hidden;
+}
+.card-text {
+  display: grid;
+  grid-template-rows: 30% 35% 30%;
+  padding: 35px 60px;
+  align-content: center;
+  text-align: left;
+}
+
+.card-text h1 {
+  font-size: 35px;
+  line-height: 45px;
+  align-self: flex-end;
+}
+
+.card-text > p {
+  font-size: 20px;
+  line-height: 1.5em;
+  align-self: center;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  align-content: center;
+  justify-content: space-between;
+  font-family: var(--secondary-font);
+}
+.metrics h2 {
+  font-family: var(--primary-font);
+}
+.metrics p {
+  font-size: 16px;
+}
+
+.metrics > div {
+  display: grid;
+  grid-template-rows: 70% 20%;
+  align-content: space-between;
+}
+.img {
+  background: url("./images/image-header-desktop.jpg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 1097px) {
+  .card {
+    display: grid;
+    width: 90vw;
+    height: 80vh;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 100%;
+    background: hsl(244, 38%, 16%);
+    border-radius: 1%;
+    justify-content: center;
+    align-content: center;
+  }
+  .card-text {
+    grid-template-rows: 28% 22% 50%;
+    padding: 10px 25px;
+    text-align: center;
+  }
+  .card-text h1 {
+    align-self: center;
+    line-height: 2rem;
+    font-size: 30px;
+  }
+  .card-text > p {
+    align-self: flex-start;
+    font-size: 16px;
+  }
+  .metrics {
+    align-self: center;
+    grid-template-rows: repeat(3, 30%);
+    grid-template-columns: 100%;
+    align-content: flex-end;
+    height: 100%;
+  }
+  .metrics h2 {
+    align-self: flex-end;
+  }
+  .metrics > div {
+    align-self: flex-start;
+  }
+  .metrics p {
+    font-size: 12px;
+  }
+  .img {
+    background: url("./images/image-header-mobile.jpg");
+    background-size: cover;
+    order: -1;
+  }
+}
